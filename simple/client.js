@@ -1,5 +1,5 @@
 var net = require('net');
-var config = require('./config.json');
+var config = require('../common/config.json');
 
 
 var client = new net.Socket();
