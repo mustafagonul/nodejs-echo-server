@@ -14,12 +14,21 @@ server.on('listening', function() {
 // On message
 server.on('message', function(data, remote) {
     console.log('DATA ' + remote.address + ': ' + data);
+
+    var message = data + " coming from Echo Server!";
+
+    server.send(message, 0, message.length, remote.port, remote.address, function(err, bytes){
+        if (err) 
+            throw err;
+    });
+    
 });
     
 
 // On error
 server.on('error', (err) => {
     console.log(`ERROR: ${err.stack}`);
+    
     server.close();
 });
 
