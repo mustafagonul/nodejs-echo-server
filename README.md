@@ -1,6 +1,6 @@
-# Node.js TCP Echo Server
+# Node.js Echo Server
 
-Node.js TCP Echo Server
+Node.js Echo Server
 
 - Simple
   - server.js
