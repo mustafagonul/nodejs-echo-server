@@ -8,7 +8,7 @@ Node.js Echo Server
 - Binary
   - server.js
   - client.js
- - UDP
+- UDP
   - server.js
   - client.js
 
